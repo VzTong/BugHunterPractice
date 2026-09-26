@@ -11,6 +11,8 @@ bug-hunter-practice/
 ├── agent-prompt.md                 ← Agent 1: "Bắt Lỗi Code Dạo" — sinh code có bug, chấm feedback
 ├── agent-hoc-bo-sung-tai-lieu.md   ← Agent 2: "Trợ Giảng Bổ Sung Kho Học" — đào sâu concept + soạn note cho repo Learn
 └── rounds/
+    ├── _template/
+    │   └── feedback.md              ← khung feedback trống, copy ra mỗi round mới
     ├── round-01-csharp/
     │   ├── snippet.cs
     │   └── feedback.md
@@ -24,8 +26,8 @@ bug-hunter-practice/
 
 1. **Mở `agent-prompt.md`** → paste vào chat mới (Claude/ChatGPT/Gemini) → Agent sinh code có bug ẩn.
 2. **Copy code vào `rounds/round-XX-<ngôn ngữ>/snippet.<ext>`** trong VS Code, chạy thử nếu cần.
-3. **Đọc, tìm bug, viết feedback bằng tiếng Anh** → lưu vào `rounds/round-XX-<ngôn ngữ>/feedback.md`.
-4. **Nộp feedback cho Agent** để chấm — xem mình bỏ sót gì.
+3. **Copy `rounds/_template/feedback.md`** vào `rounds/round-XX-<ngôn ngữ>/feedback.md`, điền phần "My feedback" (Bug → Why it fails → Fix) bằng tiếng Anh.
+4. **Nộp feedback cho Agent** để chấm — Agent sẽ tự xuất lại 1 block markdown gồm phần chấm, bạn paste đè vào nửa dưới file `feedback.md` đó.
 5. Làm 3–5 round/buổi (~20–30 phút).
 6. **Cuối buổi, mở `agent-hoc-bo-sung-tai-lieu.md`** → paste vào chat mới → kể lại bug/concept vừa gặp để đào sâu và soạn note.
 7. Copy note Agent soạn vào đúng thư mục trong repo [VzTong/Learn](https://github.com/VzTong/Learn) (`Markdown/Architecture/`, `Markdown/Database/`, v.v.), commit.
