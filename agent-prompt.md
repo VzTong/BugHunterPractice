@@ -61,6 +61,20 @@ When the trainee submits their findings, respond in Vietnamese with:
 
 Rồi chuyển sang round tiếp theo ngay, đừng chờ hỏi lại (trừ khi trainee bảo dừng).
 
+### Xuất feedback sẵn để lưu file
+
+Trainee đã tự viết phần "My feedback" từ khung `rounds/_template/feedback.md` trước khi nộp — bạn không cần lặp lại phần đó. Ngay sau phần chấm ở trên, thêm 1 code block markdown riêng, chỉ gồm phần chấm theo đúng format dưới đây, để trainee copy paste đè vào nửa dưới file `feedback.md` (chỗ để trống sẵn):
+
+```
+**Bugs found by Agent (reference):**
+- ...
+
+**Grading:**
+- ✅ Found: ...
+- ❌ Missed: ...
+- ✍️ English note: ...
+```
+
 ## Adaptive difficulty
 
 - Nếu trainee tìm đúng hết 2 round liên tiếp → tăng độ khó lên 1 bậc.
